@@ -3,199 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sondelani Creche & Preschool</title>
+    <title>Sondelani Edu-care Centre</title>
     <!-- Importing a playful, kid-friendly font -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* --- CSS STYLING --- */
-        :root {
-            --primary-yellow: #FFD166;
-            --accent-blue: #118AB2;
-            --accent-green: #06D6A0;
-            --accent-red: #EF476F;
-            --text-dark: #2D3142;
-            --bg-light: #F8F9FA;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Nunito', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--primary-yellow);
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Fredoka One', cursive;
-            letter-spacing: 1px;
-        }
-
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary-yellow);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .logo h1 {
-            color: var(--accent-red);
-            font-size: 1.8rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: bold;
-            margin-left: 15px;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            color: var(--accent-blue);
-        }
-
-        /* Hero Section */
-        .hero {
-            background-color: var(--accent-blue);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--primary-yellow);
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-
-        /* Sections General */
-        section {
-            padding: 3rem 5%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--accent-blue);
-            margin-bottom: 2rem;
-        }
-
-        /* Flexbox for Side-by-Side Content */
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            flex: 1 1 300px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-top: 5px solid var(--accent-green);
-        }
-
-        .card.red { border-top-color: var(--accent-red); }
-        .card.yellow { border-top-color: var(--accent-blue); }
-        .card.blue { border-top-color: var(--accent-blue); }
-
-        /* Image Placeholders */
-        .image-placeholder {
-            width: 100%;
-            height: 300px;
-            background-color: #ddd;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-weight: bold;
-            margin-bottom: 15px;
-           
-        }
-
-        /* Lists */
-        ul {
-            list-style-type: none;
-        }
-        
-        ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        ul li::before {
-            content: '⭐ ';
-        }
-
-        /* Contact & Map */
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .contact-info a {
-            display: inline-block;
-            margin: 5px 10px;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-        }
-
-        .btn-email { background-color: var(--accent-red); }
-        .btn-wa { background-color: var(--accent-green); }
-        .btn-fb { background-color: var(--accent-blue); }
-
-        .map-container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--text-dark);
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            header { flex-direction: column; text-align: center; }
-            nav { margin-top: 10px; }
-            nav a { display: inline-block; margin: 5px 10px; }
-            .hero h2 { font-size: 2rem; }
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <h1>Sondelani Creche</h1>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sondelani Edu-care Centre Logo">
+            </a>
+            <h1>Sondelani Edu-care Centre</h1>
         </div>
         <nav>
 		 <a href="#admissions">Admissions</a>
@@ -209,19 +31,19 @@
         <h2>Our child, our tomorrow.</h2>
         <p>A safe, fun, and loving environment for your little ones to grow and thrive.</p>
         <!-- REPLACE THE DIV BELOW WITH AN ACTUAL IMAGE TAG WHEN READY:  -->
-        <div class="image-placeholder" style="max-width: 600px; margin: 0 auto;">
-			<img src="outsde.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        <div class="image-placeholder" >
+			<img src="images/graduation.png" alt="Kids playing">
         </div>
     </section>
 
     <!-- About & Sponsors Section -->
     <section id="about">
-        <h2 class="section-title">Welcome to Sondelani</h2>
+        <h2 class="section-title">Welcome to Sondelani Edu-care Centre</h2>
         <div class="flex-container">
             <div class="card yellow">
                 <!-- REPLACE WITH IMAGE -->
                 <div class="image-placeholder">
-				<img src="inside.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+				<img src="images/playgroud.webp" alt="Kids playing">
 				</div>
                 <h3>Operating Hours</h3>
                 <p>We are here to support busy parents!</p>
@@ -233,7 +55,7 @@
             <div class="card green">
                 <!-- REPLACE WITH IMAGE -->
                 <div class="image-placeholder">
-				<img src="classrom.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+				<img src="images/outsde.webp" alt="Kids playing">
 				</div>
                 <h3>Our Sponsors</h3>
                 <p><strong>Proud sponsors of Early Childhood Development Training & Resources.</strong></p>
@@ -297,7 +119,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Sondelani Creche & Preschool. All Rights Reserved.</p>
+        <p>&copy; 2026 Sondelani Edu-care Centre. All Rights Reserved.</p>
         <p>Our child, our tomorrow.</p>
     </footer>
 

@@ -1,0 +1,215 @@
+/* --- CSS STYLING --- */
+:root {
+    --primary-yellow: #FFD166;
+    --accent-blue: #118AB2;
+    --accent-green: #06D6A0;
+    --accent-red: #EF476F;
+    --text-dark: #2D3142;
+    --bg-light: #F8F9FA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--primary-yellow);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-yellow);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    color: var(--accent-red);
+    font-size: 1.8rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 1.4rem;
+
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+
+}
+
+/* logo Section */
+.logo img {
+    max-height: 60px; /* Adjust height to fit your header */
+    width: auto;      /* Keeps the aspect ratio intact */
+    display: block;
+    border-radius: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between image and text */
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: var(--accent-blue);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-yellow);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* Sections General */
+section {
+    padding: 3rem 5%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--accent-blue);
+    margin-bottom: 2rem;
+}
+
+/* Flexbox for Side-by-Side Content */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--accent-green);
+}
+
+.card.red { border-top-color: var(--accent-red); }
+.card.yellow { border-top-color: var(--accent-blue); }
+.card.blue { border-top-color: var(--accent-blue); }
+
+/* Image Placeholders */
+.image-placeholder {
+    width: 100%;
+    height: 350px;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-weight: bold;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+/* Images */
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.image-placeholder, h3{
+    margin-bottom: 10px;
+}
+/* Lists */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+ul li::before {
+    content: '⭐ ';
+}
+
+/* Contact & Map */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-email { background-color: var(--accent-red); }
+.btn-wa { background-color: var(--accent-green); }
+.btn-fb { background-color: var(--accent-blue); }
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header { flex-direction: column; text-align: center; }
+    nav { margin-top: 10px; }
+    nav a { display: inline-block; margin: 5px 10px; }
+    .hero h2 { font-size: 2rem; }
+}
