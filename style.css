@@ -243,6 +243,14 @@ footer {
 @media (max-width: 768px) {
     header { flex-direction: column; text-align: center; }
     nav { margin-top: 10px; }
-    nav a { display: inline-block; margin: 5px 10px; }
+    nav a { display: inline-block; margin: 5px 5px; }
     .hero h2 { font-size: 2rem; }
+    .address {
+        display: block;
+        margin: 20px 20px;
+    }
+    .contact-info a{
+        display: block;
+        margin: 10px 0;
+    }
 }
