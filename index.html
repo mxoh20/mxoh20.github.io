@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondelani Creche & Preschool</title>
+    <!-- Importing a playful, kid-friendly font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS STYLING --- */
+        :root {
+            --primary-yellow: #FFD166;
+            --accent-blue: #118AB2;
+            --accent-green: #06D6A0;
+            --accent-red: #EF476F;
+            --text-dark: #2D3142;
+            --bg-light: #F8F9FA;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--primary-yellow);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            letter-spacing: 1px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-yellow);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            color: var(--accent-red);
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: bold;
+            margin-left: 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--accent-blue);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-yellow);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Sections General */
+        section {
+            padding: 3rem 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 2rem;
+        }
+
+        /* Flexbox for Side-by-Side Content */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent-green);
+        }
+
+        .card.red { border-top-color: var(--accent-red); }
+        .card.yellow { border-top-color: var(--accent-blue); }
+        .card.blue { border-top-color: var(--accent-blue); }
+
+        /* Image Placeholders */
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+            margin-bottom: 15px;
+           
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li::before {
+            content: '⭐ ';
+        }
+
+        /* Contact & Map */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn-email { background-color: var(--accent-red); }
+        .btn-wa { background-color: var(--accent-green); }
+        .btn-fb { background-color: var(--accent-blue); }
+
+        .map-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 10px; }
+            nav a { display: inline-block; margin: 5px 10px; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Sondelani Creche</h1>
+        </div>
+        <nav>
+		 <a href="#admissions">Admissions</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Our child, our tomorrow.</h2>
+        <p>A safe, fun, and loving environment for your little ones to grow and thrive.</p>
+        <!-- REPLACE THE DIV BELOW WITH AN ACTUAL IMAGE TAG WHEN READY:  -->
+        <div class="image-placeholder" style="max-width: 600px; margin: 0 auto;">
+			<img src="Optimized/outsde.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+    </section>
+
+    <!-- About & Sponsors Section -->
+    <section id="about">
+        <h2 class="section-title">Welcome to Sondelani</h2>
+        <div class="flex-container">
+            <div class="card yellow">
+                <!-- REPLACE WITH IMAGE -->
+                <div class="image-placeholder">
+				<img src="Optimized/inside.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+				</div>
+                <h3>Operating Hours</h3>
+                <p>We are here to support busy parents!</p>
+                <br>
+                <p><strong>Monday to Friday</strong></p>
+                <p style="font-size: 1.2rem; color: var(--accent-blue); font-weight: bold;">06:00 AM - 17:00 PM</p>
+            </div>
+            
+            <div class="card green">
+                <!-- REPLACE WITH IMAGE -->
+                <div class="image-placeholder">
+				<img src="Optimized/classrom.webp" alt="Kids playing" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+				</div>
+                <h3>Our Sponsors</h3>
+                <p><strong>Proud sponsors of Early Childhood Development Training & Resources.</strong></p>
+                <p>We are committed to continuously improving our skills and providing the best resources for your child's developmental milestones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions & Pricing Section -->
+    <section id="admissions" style="background-color: #fff;">
+        <h2 class="section-title">Admissions & Fees</h2>
+        <div class="flex-container">
+            
+            <!-- Requirements Card -->
+            <div class="card red">
+                <h3>Required Documents</h3>
+                <p>Please bring the following documents when registering your child:</p>
+                <br>
+                <ul>
+                    <li>Parent ID Document</li>
+                    <li>Child's Birth Certificate</li>
+                    <li>Child's Immunisation Card (Clinic Card)</li>
+                </ul>
+            </div>
+
+            <!-- Price List Card -->
+            <div class="card blue">
+                <h3>Price List</h3>
+                <ul>
+                    <li><strong>Registration (All Ages):</strong> R350.00</li>
+                    <li><strong>Toilet Paper / Tissue Fee:</strong> R100.00</li>
+                    <li><strong>3 Months - 2.5 Years:</strong> R500.00 / month</li>
+                    <li><strong>3 Years:</strong> R470.00 / month</li>
+                    <li><strong>4 Years - Grade R:</strong> R450.00 / month</li>
+                    <li><strong>Aftercare:</strong> R70.00</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-info">
+            <a href="mailto:dineoangel139@gmail.com" class="btn-email">Email Us</a>
+            <!-- Note: Add your exact phone number after wa.me/27... below -->
+            <a href="https://wa.me/0726745756" class="btn-wa">WhatsApp Us</a>
+            <a href="https://www.facebook.com/profile.php?id=100064251394089&locale=mt_MT" target="_blank" class="btn-fb">Visit our Facebook</a>
+        </div>
+
+        <p style="text-align: center; margin-bottom: 15px;"><strong>Location:</strong> 401 Dunbar Road Cato Manor, Durban, South Africa, 4091</p>
+
+        <!-- Google Maps Embed -->, 
+        <div class="map-container">Lot 401 8th street, 120618 wiggins, cato manor, Durban, 4091
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.3475739818856!2d30.966869274036085!3d-29.84904036691397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9c8f0e5c9b7%3A0x6b8f3e5e4a8d4c3a!2s401%20Dunbar%20Rd%2C%20Cato%20Manor%2C%20Durban%2C%204091%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sondelani Creche & Preschool. All Rights Reserved.</p>
+        <p>Our child, our tomorrow.</p>
+    </footer>
+
+</body>
+</html>
