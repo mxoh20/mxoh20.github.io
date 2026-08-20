@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sondelani Edu-care Centre</title>
     <!-- Importing a playful, kid-friendly font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -102,26 +103,45 @@
         <h2 class="section-title">Get In Touch</h2>
         
         <div class="contact-info">
-            <a href="mailto:dineoangel139@gmail.com" class="btn-email">Email Us</a>
+
+
+            <a href="mailto:dineoangel139@gmail.com" class="btn-email fa fa-envelope"> Email Us</a>
+            <a href="#" class="btn-call fa fa-phone"> Call Us: 063 957 7593</a>
             <!-- Note: Add your exact phone number after wa.me/27... below -->
-            <a href="https://wa.me/0726745756" class="btn-wa">WhatsApp Us</a>
-            <a href="https://www.facebook.com/profile.php?id=100064251394089&locale=mt_MT" target="_blank" class="btn-fb">Visit our Facebook</a>
+            <a href="https://wa.me/0639577593" class="btn-wa fa fa-whatsapp"> WhatsApp Us</a>
+            <a href="https://www.facebook.com/profile.php?id=100064251394089&locale=mt_MT" target="_blank" class="btn-fb fa fa-facebook-f"> Our Facebook</a>
         </div>
 
-        <p style="text-align: center; margin-bottom: 15px;"><strong>Location:</strong> 401 Dunbar Road Cato Manor, Durban, South Africa, 4091</p>
+        <div class="address"><p class="fa fa-map-marker"><strong> Location:</strong> 109 New Dunbar Rd, Wiggins, Durban, 4091</p>
+            <a href="https://maps.google.com/?cid=12423259393779907299" target="_blank" >
+                📍 Open in Google Maps
+            </a>
+        </div>
 
-        <!-- Google Maps Embed -->, 
+        <!-- Google Maps Embed -->
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.3475739818856!2d30.966869274036085!3d-29.84904036691397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9c8f0e5c9b7%3A0x6b8f3e5e4a8d4c3a!2s401%20Dunbar%20Rd%2C%20Cato%20Manor%2C%20Durban%2C%204091%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <iframe
+                    src="https://maps.google.com/maps?q=Sondelani+Educare+Centre+Cato+Manor+Durban&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0; border-radius: 12px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Sondelani Edu-care Centre. All Rights Reserved.</p>
-        <p>Our child, our tomorrow.</p>
+        <p>&copy; <span id="year"></span> Sondelani Edu-care Centre.
+         All Rights Reserved.</p>
+        <p class="developer-credit">Designed & Developed by <span>Mxoh</span></p>
     </footer>
 
 </body>
+<script>
+    // Automatically sets the span text to the current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </html>

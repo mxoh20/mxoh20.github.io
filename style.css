@@ -38,8 +38,8 @@ header {
 }
 
 .logo h1 {
-    color: var(--accent-red);
-    font-size: 1.8rem;
+    color: var(--accent-blue);
+    font-size: 2rem;
 }
 
 nav a {
@@ -169,6 +169,22 @@ ul li::before {
     content: '⭐ ';
 }
 
+/* address */
+
+.address {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Aligns icon and text vertically */
+    text-align: center;
+    margin-bottom: 1rem;
+    /*width: 100%;             !* Ensures full container width *!*/
+}
+.address,p,a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 /* Contact & Map */
 .contact-info {
     text-align: center;
@@ -179,12 +195,13 @@ ul li::before {
     display: inline-block;
     margin: 5px 10px;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
 
+.btn-call { background-color: var( --text-dark); }
 .btn-email { background-color: var(--accent-red); }
 .btn-wa { background-color: var(--accent-green); }
 .btn-fb { background-color: var(--accent-blue); }
@@ -204,6 +221,17 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
+}
+
+.developer-credit {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.developer-credit span {
+    color: var(--primary-yellow);
+    font-weight: bold;
 }
 
 /* Mobile Responsiveness */
