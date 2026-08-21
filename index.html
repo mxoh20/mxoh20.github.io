@@ -8,21 +8,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/Photo-Logo.png">
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
+    <header id="home">
         <div class="logo">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Sondelani Edu-care Centre Logo">
+                <img src="images/Photo-Logo.png" alt="Sondelani Edu-care Centre Logo">
             </a>
             <h1>Sondelani Edu-care Centre</h1>
         </div>
         <nav>
-		 <a href="#admissions">Admissions</a>
+		 <a href="index.html">Welcome</a>
             <a href="#about">About</a>
+            <a href="#admissions">Admissions</a>
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
@@ -31,7 +32,7 @@
     <section class="hero">
         <h2>Our child, our tomorrow.</h2>
         <p>A safe, fun, and loving environment for your little ones to grow and thrive.</p>
-        <!-- REPLACE THE DIV BELOW WITH AN ACTUAL IMAGE TAG WHEN READY:  -->
+        <!-- Graduation image -->
         <div class="image-placeholder" >
 			<img src="images/graduation.webp" alt="Kids wearing gown">
         </div>
@@ -50,7 +51,7 @@
                 <p>We are here to support busy parents!</p>
                 <br>
                 <p><strong>Monday to Friday</strong></p>
-                <p style="font-size: 1.2rem; color: var(--accent-blue); font-weight: bold;">06:00 AM - 17:00 PM</p>
+                <p class="time">06:00 AM - 17:00 PM</p>
             </div>
             
             <div class="card green">
@@ -66,7 +67,7 @@
     </section>
 
     <!-- Admissions & Pricing Section -->
-    <section id="admissions" style="background-color: #fff;">
+    <section id="admissions">
         <h2 class="section-title">Admissions & Fees</h2>
         <div class="flex-container">
             
@@ -103,11 +104,8 @@
         <h2 class="section-title">Get In Touch</h2>
         
         <div class="contact-info">
-
-
             <a href="mailto:dineoangel139@gmail.com" class="btn-email fa fa-envelope"> Email Us</a>
             <a href="" class="btn-call fa fa-phone"> Call Us: 063 957 7593</a>
-            <!-- Note: Add your exact phone number after wa.me/27... below -->
             <a href="https://wa.me/0639577593" class="btn-wa fa fa-whatsapp"> WhatsApp Us</a>
             <a href="https://www.facebook.com/profile.php?id=100064251394089&locale=mt_MT" target="_blank" class="btn-fb fa fa-facebook-f"> Our Facebook</a>
         </div>
