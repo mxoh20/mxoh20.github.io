@@ -85,7 +85,7 @@ nav a:hover {
     background-color: var(--accent-blue);
     color: white;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .hero h2 {
@@ -120,9 +120,9 @@ section {
 }
 
 .card {
-    background: white;
+    background: var(--bg-light);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     flex: 1 1 300px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-top: 5px solid var(--accent-green);
@@ -259,31 +259,41 @@ footer {
         z-index: 1000;
     width: 100%;}
 
+    .logo{
+ display: none;
+    }
+
     .logo h1 {
         color: var(--accent-blue);
         font-size: 1.5rem;
     }
 
     /* logo Section */
-    .logo img {
-        max-height: 100px; /* Adjust height to fit your header */
-        width: auto;      /* Keeps the aspect ratio intact */
+    /*.logo img {*/
+    /*    max-height: 100px; !* Adjust height to fit your header *!*/
+    /*    width: auto;      !* Keeps the aspect ratio intact *!*/
+
+    /*}*/
+
+    nav {
+        display: inline-block;
+        /*align-items: center;*/
+        gap: 2px; /* Adds space between image and text */
+    }
+    nav a { display: inline-block; }
+    nav a:hover{
+        /*border: none;*/
+        color: var(--primary-yellow);
+        background-color: var(--accent-blue);
+        /*border: 2px solid var(--primary-yellow);*/
+        /*margin: 1px 0 1px 0;*/
+        padding: 0 10px;
+        transition:  background-color 2.5s ease, color 1.9s ease;
 
     }
 
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 1px; /* Adds space between image and text */
-    }
+    /*nav { margin-top: 10px; }*/
 
-    .logo img {
-        height: auto;
-    }
-
-
-    nav { margin-top: 10px; }
-    nav a { display: inline-block; margin: 5px 5px; }
     .hero h2 { font-size: 2rem; }
     .address {
         display: block;
