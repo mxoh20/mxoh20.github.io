@@ -288,7 +288,7 @@ footer {
         /*border: 2px solid var(--primary-yellow);*/
         /*margin: 1px 0 1px 0;*/
         padding: 0 10px;
-        transition:  background-color 2.5s ease, color 1.9s ease;
+        transition:  background-color 1.5s ease, color 1.5s ease;
 
     }
 
@@ -302,5 +302,14 @@ footer {
     .contact-info a{
         display: block;
         margin: 10px 0;
+    }
+
+    .map-container {
+        width: 100%;
+        /*max-width: 900px;*/
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+
     }
 }
