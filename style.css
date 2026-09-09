@@ -306,7 +306,7 @@ footer {
 
     .map-container {
         width: 100%;
-        /*max-width: 900px;*/
+        max-width: 900px;
         margin: 0 auto;
         border-radius: 15px;
         overflow: hidden;
